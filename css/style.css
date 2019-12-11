@@ -15,32 +15,33 @@ Hex/HTML 212322
 
 
 html {
-    background-color: #9F968D;
     font-family: Verdana, Geneva, sans-serif;
     color: #212322;
 }
 body {
-    background-color: white;
-    width: 80%;
+    width: 100%;
     margin: auto;
     height: 100%;
 }
 header {
-    padding: 20px 20px 20px 20px;
+    padding: 20px 0px 20px 0px;
     margin: 0px;
     background-color: #212322;
+}
+#headerFlex {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 75%;
+    margin: auto;
 }
 header img {
     width: 75px;
     height: 75px;
     order: 1;
-    flex-grow: 2;
+    flex-grow: 1;
 }
 header nav {
-    padding: 0px;
     margin: 0px;
     width: 100%;
     order: 2;
@@ -55,16 +56,79 @@ header nav ul {
 }
 
 header nav ul li {
-    text-align: center;
+    text-align: right;
     color: white;
-    padding: 5px 0px 5px 0px;
-    width: 10%;
+    padding: 5px 0px 5px 50px;
     display: block;
     float: right;
     background-color: #212322;
     border: 2px solid light grey;
+    font-size: 1.25em;
+    font-weight: bold;
 }
 
 header nav ul li:hover {
     color: #F2A900;
+}
+
+#main {
+    width: 66%;
+    margin: auto;
+}
+.title::before {
+  border-top: 3px solid #F2A900;
+  content: '';
+  display: block;
+  width: 3%;
+  height: 5px;
+}
+.title {
+  font-weight: bold;
+}
+.content {
+  margin-bottom: 20px;
+}
+.gallery {
+  width: 100%;
+  height: 25%;
+}
+
+.image {
+  float: left;
+  margin: 10px;
+  width: 15%;
+  position: relative;
+}
+
+.headshot {
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.hoverText {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.image:hover .headshot {
+  opacity: 0.3;
+}
+
+.image:hover .hoverText {
+  opacity: 1;
+}
+
+footer {
+  padding: 20px 0px 20px 0px;
+  width: 100%;
+  text-align: center;
+  background-color: #212322;
+  color: white;
 }
