@@ -217,7 +217,7 @@ hr.mobile {
         width: 100%;
     }
     .gallery {
-        height: 150%;
+        height: 220%;
     }
     .image:hover .headshot {
         opacity: 1;
@@ -267,12 +267,12 @@ hr.mobile {
     }
 
     #schedule, #schedule-container {
-        height: 50%;
+        height: 60%;
     }
 }
 @media all and (max-width: 960px) {
     #headerFlex {
-        height: 40%;
+        height: 50%;
         display: block;
         width: 100%;
         text-align: center;
