@@ -137,8 +137,21 @@ a {
 }
 
 #schedule {
-    width: 10%;
+    width: 100%;
     margin: none;
+}
+
+#schedule-container {
+    width: 100%;
+    margin: none;
+    height: 15%;
+}
+
+.schedule-item {
+    width: 28%;
+    text-align: center;
+    margin: 15px;
+    float: left;
 }
 
 footer {
